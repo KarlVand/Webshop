@@ -1,0 +1,18 @@
+@import "_variables";
+
+/* ----- FONTS ---------- */
+$font-path: "../assets/fonts";
+
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local($font-path + "/Heebo-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ----- GENERAL LAYOUT ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+}

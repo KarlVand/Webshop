@@ -1,0 +1,20 @@
+/* ----- THEME COLORS ---------- */
+/* ----- FONTS ---------- */
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+/* ----- GENERAL LAYOUT ----- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- THEME COLORS ---------- */
+.mainPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(204, 220, 203);
+}/*# sourceMappingURL=App.css.map */
