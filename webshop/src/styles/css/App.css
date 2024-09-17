@@ -6,6 +6,12 @@
   font-weight: 600;
   font-display: swap;
 }
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
 /* ----- GENERAL LAYOUT ----- */
 * {
   margin: 0;

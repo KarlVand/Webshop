@@ -4,20 +4,75 @@
 header {
   position: fixed;
   top: 0;
-  background-color: rgba($color: white, $alpha: 0.8);
-  backdrop-filter: blur(2px);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  background-color: rgba($color: white, $alpha: 0.7);
+  backdrop-filter: blur(2px);
 }
 
-a {
-  font-family: "Heebo", sans-serif;
-  text-decoration: none;
-  color: $dark-color;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  :hover {
-    color: $main-color;
+/* ----- BANNER ---------- */
+
+.banner {
+  background-color: $main-color;
+  height: 2rem;
+}
+
+/* ----- MAIN NAVBAR ----- */
+
+.navbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1800px;
+  height: 7rem;
+  top: 1.5rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  .links {
+    display: flex;
+    gap: 2rem;
   }
+}
+
+.logo {
+  img {
+    position: absolute;
+    z-index: -1;
+    top: 0.5px;
+    left: 10rem;
+  }
+  h1 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    .fresh {
+      color: $main-color;
+    }
+    .shop {
+      color: $dark-color;
+    }
+  }
+}
+
+.links {
+  padding-top: 1.8rem;
+  margin-left: -5.4rem;
+  li {
+    list-style: none;
+    a {
+      font-family: "Heebo", sans-serif;
+      font-weight: 800;
+      text-decoration: none;
+      color: $dark-color;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
 }

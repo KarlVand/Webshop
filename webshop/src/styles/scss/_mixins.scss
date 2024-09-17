@@ -10,6 +10,13 @@ $font-path: "../assets/fonts";
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local($font-path + "/Heebo-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
 /* ----- GENERAL LAYOUT ----- */
 
 * {
