@@ -5,6 +5,13 @@ $font-path: "../assets/fonts";
 
 @font-face {
   font-family: "Heebo", sans-serif;
+  src: local($font-path + "/Heebo-light.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Heebo", sans-serif;
   src: local($font-path + "/Heebo-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;

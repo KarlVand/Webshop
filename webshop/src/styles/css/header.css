@@ -2,6 +2,12 @@
 /* ----- FONTS ---------- */
 @font-face {
   font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-light.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo", sans-serif;
   src: local("../assets/fonts/Heebo-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;
@@ -31,7 +37,43 @@ header {
 /* ----- BANNER ---------- */
 .banner {
   background-color: rgb(100, 128, 0);
-  height: 2rem;
+  height: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.banner ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner li {
+  display: flex;
+  list-style: none;
+}
+
+.banner li a {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+select,
+input {
+  padding: 0 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 18, 9);
+  border: none;
+}
+
+.submit {
+  background-color: rgb(67, 84, 3);
+  color: rgb(255, 255, 255);
+  margin: 0 0.5rem;
+  padding: 0.1rem 1rem;
 }
 
 /* ----- MAIN NAVBAR ----- */
@@ -40,29 +82,24 @@ header {
   display: flex;
   width: 100%;
   max-width: 1800px;
-  height: 7rem;
+  height: 7em;
   top: 1.5rem;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar .links {
-  display: flex;
-  gap: 2rem;
-}
-
 .logo img {
   position: absolute;
   z-index: -1;
-  top: 0.5px;
-  left: 10rem;
+  top: -18px;
+  left: 5rem;
 }
 
 .logo h1 {
   font-family: "Heebo", sans-serif;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .logo h1 .fresh {
@@ -74,6 +111,8 @@ header {
 }
 
 .links {
+  display: flex;
+  gap: 2rem;
   padding-top: 1.8rem;
   margin-left: -5.4rem;
 }

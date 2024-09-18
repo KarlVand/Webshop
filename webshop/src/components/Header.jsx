@@ -1,12 +1,21 @@
 import "../styles/css/header.css";
 import Logo from "../assets/images/apple-touch-icon.png";
+
 import BurgerMenu from "../assets/burger-menu.svg";
 
 function Header() {
   return (
     <header>
       <div className="banner">
-        <p></p>
+        <select
+          name="language"
+          id="chooseLanguage">
+          <option value="">Language</option>
+          <option value="french">French</option>
+          <option value="dutch">Dutch</option>
+          <option value="english">English</option>{" "}
+        </select>
+
         <ul>
           <li>
             <a href="Account">My Account</a>
@@ -18,7 +27,19 @@ function Header() {
             <a href="Contact">Contact Us</a>
           </li>
         </ul>
+
+        <form>
+          <input
+            className="search"
+            type="search"
+            placeholder="Search Website"></input>
+          <input
+            className="submit"
+            type="submit"
+            value="Search"></input>
+        </form>
       </div>
+
       <div className="navbar">
         <div className="logo">
           <img

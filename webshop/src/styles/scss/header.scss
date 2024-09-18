@@ -13,7 +13,39 @@ header {
 
 .banner {
   background-color: $main-color;
-  height: 2rem;
+  height: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+  li {
+    display: flex;
+    list-style: none;
+    a {
+      font-family: "Heebo", sans-serif;
+      font-weight: 400;
+      text-decoration: none;
+      color: $light-color;
+    }
+  }
+}
+
+select,
+input {
+  padding: 0 0.5rem;
+  background-color: $light-color;
+  color: $dark-color;
+  border: none;
+}
+.submit {
+  background-color: $main-darker-color;
+  color: $light-color;
+  margin: 0 0.5rem;
+  padding: 0.1rem 1rem;
 }
 
 /* ----- MAIN NAVBAR ----- */
@@ -23,28 +55,24 @@ header {
   display: flex;
   width: 100%;
   max-width: 1800px;
-  height: 7rem;
+  height: 7em;
   top: 1.5rem;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  .links {
-    display: flex;
-    gap: 2rem;
-  }
 }
 
 .logo {
   img {
     position: absolute;
     z-index: -1;
-    top: 0.5px;
-    left: 10rem;
+    top: -18px;
+    left: 5rem;
   }
   h1 {
     font-family: "Heebo", sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3em;
     .fresh {
       color: $main-color;
     }
@@ -55,6 +83,8 @@ header {
 }
 
 .links {
+  display: flex;
+  gap: 2rem;
   padding-top: 1.8rem;
   margin-left: -5.4rem;
   li {
