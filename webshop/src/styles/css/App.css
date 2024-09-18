@@ -1,4 +1,5 @@
 /* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
 /* ----- FONTS ---------- */
 @font-face {
   font-family: "Heebo", sans-serif;
@@ -25,6 +26,7 @@
 }
 
 /* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
 .mainPage {
   width: 100vw;
   height: 100vh;

@@ -17,26 +17,32 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2vw;
   ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.5vw;
+    margin-left: -10rem;
   }
   li {
     display: flex;
     list-style: none;
+
     a {
       font-family: "Heebo", sans-serif;
       font-weight: 400;
       text-decoration: none;
+      white-space: nowrap;
       color: $light-color;
+    }
+    img {
+      max-width: 20px;
     }
   }
 }
 
 select,
 input {
-  padding: 0 0.5rem;
+  padding: 0 0.5vw;
   background-color: $light-color;
   color: $dark-color;
   border: none;
@@ -44,8 +50,15 @@ input {
 .submit {
   background-color: $main-darker-color;
   color: $light-color;
-  margin: 0 0.5rem;
-  padding: 0.1rem 1rem;
+  margin: 0 0.5vw;
+  padding: 0.1vw 1vw;
+}
+
+.promo {
+  max-width: 40vw;
+  p {
+    white-space: no-wrap;
+  }
 }
 
 /* ----- MAIN NAVBAR ----- */
@@ -55,24 +68,26 @@ input {
   display: flex;
   width: 100%;
   max-width: 1800px;
-  height: 7em;
-  top: 1.5rem;
+  height: 11vh;
+  top: 1.5vh;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
+
+/* --------------- LOGO ----- */
 
 .logo {
   img {
     position: absolute;
     z-index: -1;
     top: -18px;
-    left: 5rem;
+    left: 5vw;
   }
   h1 {
     font-family: "Heebo", sans-serif;
     font-weight: 800;
-    font-size: 3em;
+    font-size: 3rem;
     .fresh {
       color: $main-color;
     }
@@ -82,17 +97,20 @@ input {
   }
 }
 
+/* ---------------NAV MENU ----- */
+
 .links {
   display: flex;
   gap: 2rem;
   padding-top: 1.8rem;
-  margin-left: -5.4rem;
+  margin-left: -6vw;
   li {
     list-style: none;
     a {
       font-family: "Heebo", sans-serif;
-      font-weight: 800;
+      font-weight: 600;
       text-decoration: none;
+      white-space: nowrap;
       color: $dark-color;
       text-transform: uppercase;
       font-size: 1.2rem;
@@ -105,4 +123,61 @@ input {
 
 .burger-menu {
   display: none;
+}
+
+/* --------------- ACTION BUTTONS ----- */
+
+.buttons {
+  display: flex;
+  gap: 1vw;
+
+  .btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vh;
+    padding: 0 2vw;
+    background-color: rgba($color: white, $alpha: 0.5);
+    img {
+      max-width: 1.3vw;
+    }
+    a {
+      font-family: "Heebo", sans-serif;
+      font-weight: 400;
+      text-decoration: none;
+      color: $dark-color;
+      padding-left: 0.1vw;
+    }
+  }
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 990px) {
+  .banner {
+    display: none;
+  }
+
+  header {
+    background: white;
+    backdrop-filter: none;
+    height: 15vh;
+  }
+  .logo {
+    img {
+      margin-left: -5vw;
+    }
+  }
+  h1 {
+    justify-content: center;
+    margin-top: 7vh;
+    margin-left: 2vw;
+  }
+  span {
+    font-size: 7vw;
+  }
+  .links {
+    display: none;
+  }
 }
