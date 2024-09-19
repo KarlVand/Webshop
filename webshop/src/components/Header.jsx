@@ -13,7 +13,7 @@ import MyCart from "../assets/icons/shopping_cart.svg";
 function Header() {
   return (
     <header>
-      {/* ----- INFO BANNER ----- */}
+      {/* ----------------------------------- INFO BANNER ----- */}
       <div className="banner">
         {/* - LANGUAGE SELECT - */}
         <select
@@ -64,7 +64,7 @@ function Header() {
             value="Search"></input>
         </form>
       </div>
-      {/* ----- MAIN NAVBAR & LOGO ----- */}
+      {/* ----------------------------------- MAIN NAVBAR & LOGO ----- */}
       <div className="navbar">
         <div className="logo">
           <img
@@ -112,57 +112,68 @@ function Header() {
             <a href="My Cart">My Cart</a>
           </div>
         </div>
-        {/* ----- RESPONSIVE HEADER => MOBILE ----- */}
-        <div className="mobileHeader">
-          <div className="mobileImg">
-            <img
-              src={Logo}
-              alt="logo"
-            />
-          </div>
-          <div className="mobileLogo">
-            <h1>
-              <span className="fresh">Fresh</span>
-              <span className="shop">Shop</span>
-            </h1>
-          </div>
-          <div className="burgerBtn">
-            <img
-              src={BurgerMenu}
-              alt="Menu"
-            />
-          </div>
+      </div>
+      {/* --------------------------------- RESPONSIVE HEADER => MOBILE ----- */}
+      <div className="mobileHeader">
+        <div className="mobileImg">
+          <img
+            src={Logo}
+            alt="logo"
+          />
         </div>
-        {/* - BURGER MENU - */}
-        <div className="burgerMenu">
-          <ul className="linksBurger">
-            <li>
-              <a href="Home">Home</a>
-            </li>
-            <li>
-              <a href="About">About us</a>
-            </li>
-            <li>
-              <a href="Shop">Shop</a>
-            </li>
-            <li>
-              <a href="Gallery">Gallery</a>
-            </li>
-            <li>
-              <a href="Contact">Contact</a>
-            </li>
-            <li>
-              <a href="Locations">Locations</a>
-            </li>
-            <div className="divider"></div>
-            <li>
-              <a href="MyAccount">My Account</a>
-            </li>
-            <li>
-              <a href="MyCart">My Cart</a>
-            </li>
-          </ul>
+        <div className="mobileLogo">
+          <h1>
+            <span className="fresh">Fresh</span>
+            <span className="shop">Shop</span>
+          </h1>
         </div>
+        <div className="burgerBtn">
+          <img
+            src={BurgerMenu}
+            alt="Menu"
+          />
+        </div>
+      </div>
+      {/* - BURGER MENU - */}
+      <div className="burgerMenu">
+        <form>
+          <input
+            className="search"
+            type="search"
+            placeholder="Search Website"></input>
+          <input
+            className="submit"
+            type="submit"
+            value="Search"></input>
+        </form>
+        <div className="divider"></div>
+        <ul className="linksBurger">
+          <li>
+            <a href="Home">Home</a>
+          </li>
+          <li>
+            <a href="About">About us</a>
+          </li>
+          <li>
+            <a href="Shop">Shop</a>
+          </li>
+          <li>
+            <a href="Gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="Contact">Contact</a>
+          </li>
+          <li>
+            <a href="Locations">Locations</a>
+          </li>
+          <div className="divider"></div>
+          <li>
+            <a href="MyAccount">My Account</a>
+          </li>
+          <li>
+            <a href="MyCart">My Cart</a>
+          </li>
+        </ul>
       </div>
     </header>
   );

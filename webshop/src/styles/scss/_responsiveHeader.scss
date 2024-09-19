@@ -1,0 +1,88 @@
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 990px) {
+  /* ----- DISPLAY NONE ----- */
+  header {
+    background: none;
+    backdrop-filter: none;
+  }
+
+  .banner,
+  .navbar,
+  .links,
+  .buttons,
+  .logo {
+    display: none;
+  }
+
+  /* ----- ADAPTATIVE ----- */
+  .mobileHeader {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    height: 10vh;
+    background-color: white;
+    h1 {
+      font-family: "Heebo", sans-serif;
+      font-weight: 800;
+      font-size: 2.1rem;
+      margin-left: -1rem;
+      .fresh {
+        color: $main-color;
+      }
+      .shop {
+        color: $dark-color;
+      }
+    }
+  }
+  .mobileImg,
+  .mobileLogo,
+  .burgerBtn {
+    display: flex;
+    position: relative;
+  }
+
+  /* ----- BURGER MENU ----- */
+
+  .burgerMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: white, $alpha: 0.7);
+    width: 70%;
+    border-radius: 36px;
+    border: 2px solid $main-color;
+    box-shadow: 5px;
+
+    .divider {
+      background-color: $main-color;
+      width: 70vw;
+      height: 2px;
+    }
+    li {
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem 0;
+      a {
+        font-family: "Heebo", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        color: $dark-color;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
