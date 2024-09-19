@@ -153,7 +153,9 @@ input {
   color: rgb(100, 128, 0);
 }
 
-.burger-menu {
+.burgerBtn,
+.burgerMenu,
+.mobileHeader {
   display: none;
 }
 
@@ -186,27 +188,41 @@ input {
 
 /* ----- MEDIA QUERIES ----- */
 @media (max-width: 990px) {
-  .banner {
-    display: none;
+  /* ----- BURGER MENU ----- */
+  .burgerBtn {
+    display: block;
   }
-  header {
-    background: white;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
+  .burgerMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+  }
+  /* ----- ADAPTATIVE ----- */
+  .mobileHeader {
+    display: flex;
     height: 15vh;
+    background-color: white;
   }
-  .logo img {
-    margin-left: -5vw;
-  }
-  h1 {
-    justify-content: center;
-    margin-top: 7vh;
-    margin-left: 2vw;
+  .mobileImg,
+  .mobileLogo,
+  .burgerBtn {
+    display: block;
   }
   span {
     font-size: 7vw;
   }
-  .links {
+  /* ----- DISPLAY NONE ----- */
+  header {
+    background: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .banner,
+  .navbar,
+  .links,
+  .buttons,
+  .logo {
     display: none;
   }
 } 

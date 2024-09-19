@@ -13,7 +13,9 @@ import MyCart from "../assets/icons/shopping_cart.svg";
 function Header() {
   return (
     <header>
+      {/* ----- INFO BANNER ----- */}
       <div className="banner">
+        {/* - LANGUAGE SELECT - */}
         <select
           name="language"
           id="chooseLanguage">
@@ -22,6 +24,7 @@ function Header() {
           <option value="dutch">Dutch</option>
           <option value="english">English</option>{" "}
         </select>
+        {/* - INFO NAV - */}
         <ul>
           <li>
             <img
@@ -42,12 +45,14 @@ function Header() {
             <a href="Contact">Contact Us</a>
           </li>
         </ul>
+        {/* - DYNAMIC DISPLAY - */}
         <div className="promo">
           <p>
             Quelconque promo Lorem ipsum dolor sit amet consectetur adipisicing
             elit.
           </p>
         </div>
+        {/* - SEARCH BAR - */}
         <form>
           <input
             className="search"
@@ -59,7 +64,7 @@ function Header() {
             value="Search"></input>
         </form>
       </div>
-
+      {/* ----- MAIN NAVBAR & LOGO ----- */}
       <div className="navbar">
         <div className="logo">
           <img
@@ -71,7 +76,7 @@ function Header() {
             <span className="shop">Shop</span>
           </h1>
         </div>
-
+        {/* - MENU - */}
         <ul className="links">
           <li>
             <a href="Home">Home</a>
@@ -89,7 +94,7 @@ function Header() {
             <a href="Contact">Contact us</a>
           </li>
         </ul>
-
+        {/* - ACTION BUTTONS */}
         <div className="buttons">
           <div className="account btn">
             <img
@@ -107,12 +112,56 @@ function Header() {
             <a href="My Cart">My Cart</a>
           </div>
         </div>
-
-        <div className="burger-menu">
-          <img
-            src={BurgerMenu}
-            alt="Menu"
-          />
+        {/* ----- RESPONSIVE HEADER => MOBILE ----- */}
+        <div className="mobileHeader">
+          <div className="mobileImg">
+            <img
+              src={Logo}
+              alt="logo"
+            />
+          </div>
+          <div className="mobileLogo">
+            <h1>
+              <span className="fresh">Fresh</span>
+              <span className="shop">Shop</span>
+            </h1>
+          </div>
+          <div className="burgerBtn">
+            <img
+              src={BurgerMenu}
+              alt="Menu"
+            />
+          </div>
+        </div>
+        {/* - BURGER MENU - */}
+        <div className="burgerMenu">
+          <ul className="linksBurger">
+            <li>
+              <a href="Home">Home</a>
+            </li>
+            <li>
+              <a href="About">About us</a>
+            </li>
+            <li>
+              <a href="Shop">Shop</a>
+            </li>
+            <li>
+              <a href="Gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="Contact">Contact</a>
+            </li>
+            <li>
+              <a href="Locations">Locations</a>
+            </li>
+            <div className="divider"></div>
+            <li>
+              <a href="MyAccount">My Account</a>
+            </li>
+            <li>
+              <a href="MyCart">My Cart</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

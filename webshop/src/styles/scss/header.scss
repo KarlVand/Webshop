@@ -121,7 +121,9 @@ input {
   }
 }
 
-.burger-menu {
+.burgerBtn,
+.burgerMenu,
+.mobileHeader {
   display: none;
 }
 
@@ -152,32 +154,4 @@ input {
   }
 }
 
-/* ----- MEDIA QUERIES ----- */
-
-@media (max-width: 990px) {
-  .banner {
-    display: none;
-  }
-
-  header {
-    background: white;
-    backdrop-filter: none;
-    height: 15vh;
-  }
-  .logo {
-    img {
-      margin-left: -5vw;
-    }
-  }
-  h1 {
-    justify-content: center;
-    margin-top: 7vh;
-    margin-left: 2vw;
-  }
-  span {
-    font-size: 7vw;
-  }
-  .links {
-    display: none;
-  }
-}
+@import "_responsive";
