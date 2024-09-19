@@ -16,35 +16,39 @@ function Header() {
       {/* ----------------------------------- INFO BANNER ----- */}
       <div className="banner">
         {/* - LANGUAGE SELECT - */}
-        <select
-          name="language"
-          id="chooseLanguage">
-          <option value="">Language</option>
-          <option value="french">French</option>
-          <option value="dutch">Dutch</option>
-          <option value="english">English</option>{" "}
-        </select>
+        <div className="languageSelect">
+          <select
+            name="language"
+            id="chooseLanguage">
+            <option value="">Language</option>
+            <option value="french">French</option>
+            <option value="dutch">Dutch</option>
+            <option value="english">English</option>{" "}
+          </select>
+        </div>
         {/* - INFO NAV - */}
-        <ul>
-          <li>
-            <img
-              src={Account}
-              alt="account"></img>{" "}
-            <a href="Account">My Account</a>
-          </li>
-          <li>
-            <img
-              src={Location}
-              alt="location"></img>
-            <a href="Location">Our Location</a>
-          </li>
-          <li>
-            <img
-              src={Contact}
-              alt="contact"></img>
-            <a href="Contact">Contact Us</a>
-          </li>
-        </ul>
+        <div className="infoNav">
+          <ul>
+            <li>
+              <img
+                src={Account}
+                alt="account"></img>{" "}
+              <a href="Account">My Account</a>
+            </li>
+            <li>
+              <img
+                src={Location}
+                alt="location"></img>
+              <a href="Location">Our Location</a>
+            </li>
+            <li>
+              <img
+                src={Contact}
+                alt="contact"></img>
+              <a href="Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
         {/* - DYNAMIC DISPLAY - */}
         <div className="promo">
           <p>
@@ -53,16 +57,18 @@ function Header() {
           </p>
         </div>
         {/* - SEARCH BAR - */}
-        <form>
-          <input
-            className="search"
-            type="search"
-            placeholder="Search Website"></input>
-          <input
-            className="submit"
-            type="submit"
-            value="Search"></input>
-        </form>
+        <div className="searchBar">
+          <form>
+            <input
+              className="search"
+              type="search"
+              placeholder="Search Website"></input>
+            <input
+              className="submit"
+              type="submit"
+              value="Search"></input>
+          </form>
+        </div>
       </div>
       {/* ----------------------------------- MAIN NAVBAR & LOGO ----- */}
       <div className="navbar">
@@ -77,23 +83,25 @@ function Header() {
           </h1>
         </div>
         {/* - MENU - */}
-        <ul className="links">
-          <li>
-            <a href="Home">Home</a>
-          </li>
-          <li>
-            <a href="About">About us</a>
-          </li>
-          <li>
-            <a href="Shop">Shop</a>
-          </li>
-          <li>
-            <a href="Gallery">Gallery</a>
-          </li>
-          <li>
-            <a href="Contact">Contact us</a>
-          </li>
-        </ul>
+        <div className="NavMenu">
+          <ul className="links">
+            <li>
+              <a href="Home">Home</a>
+            </li>
+            <li>
+              <a href="About">About us</a>
+            </li>
+            <li>
+              <a href="Shop">Shop</a>
+            </li>
+            <li>
+              <a href="Gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="Contact">Contact us</a>
+            </li>
+          </ul>
+        </div>
         {/* - ACTION BUTTONS */}
         <div className="buttons">
           <div className="account btn">
