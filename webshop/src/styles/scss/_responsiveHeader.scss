@@ -22,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     background-color: white;
     h1 {
@@ -44,12 +44,16 @@
     display: flex;
     position: relative;
   }
+  .burgerBtn {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
 
   /* ----- BURGER MENU ----- */
 
   .burgerMenu {
-    position: absolute;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -83,13 +87,14 @@
         color: $dark-color;
         text-transform: uppercase;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        cursor: pointer;
 
         &:hover {
           color: $light-color;
           background-color: $main-color;
           padding: 0.8rem;
-          width: 100vw;
+          background-size: 100vw;
         }
       }
     }

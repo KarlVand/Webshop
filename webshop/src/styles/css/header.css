@@ -128,6 +128,7 @@ input {
 .logo {
   position: relative;
   display: flex;
+  margin-left: 1rem;
 }
 
 .logo img {
@@ -189,15 +190,18 @@ input {
   display: flex;
   position: relative;
   gap: 1vw;
+  margin-right: 1rem;
 }
 
 .buttons .btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3vh;
-  padding: 0 2vw;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 2vh;
+  padding: 1vh 2vw;
+  background-color: white;
+  border-radius: 9px;
+  border: 2px solid rgb(100, 128, 0);
 }
 
 .buttons .btn img {
@@ -234,7 +238,7 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     background-color: white;
   }
@@ -256,10 +260,14 @@ input {
     display: flex;
     position: relative;
   }
+  .burgerBtn {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
   /* ----- BURGER MENU ----- */
   .burgerMenu {
-    position: absolute;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -295,13 +303,14 @@ input {
     color: rgb(13, 18, 9);
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
   .burgerMenu li a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(100, 128, 0);
     padding: 0.8rem;
-    width: 100vw;
+    background-size: 100vw;
   }
 } 
 

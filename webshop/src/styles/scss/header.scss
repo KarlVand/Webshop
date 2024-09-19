@@ -95,6 +95,7 @@ input {
 .logo {
   position: relative;
   display: flex;
+  margin-left: 1rem;
   img {
     position: absolute;
     z-index: -1;
@@ -151,13 +152,16 @@ input {
   display: flex;
   position: relative;
   gap: 1vw;
+  margin-right: 1rem;
   .btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3vh;
-    padding: 0 2vw;
-    background-color: rgba($color: white, $alpha: 0.5);
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    background-color: rgba($color: white, $alpha: 1);
+    border-radius: 9px;
+    border: 2px solid $main-color;
     img {
       max-width: 1.3vw;
     }
