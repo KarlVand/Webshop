@@ -1,0 +1,13 @@
+@media (max-width:990px) {
+    main {
+        margin-top: 1.7rem;
+    }
+    .keen-slider {
+        margin-top: 5rem;
+        border-radius: 0 0 35px 35px;
+        img {
+            box-sizing: content-box;
+            height: 100%;
+        }
+    }
+}

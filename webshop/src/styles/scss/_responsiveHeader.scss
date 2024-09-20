@@ -52,7 +52,7 @@
   /* ----- BURGER MENU ----- */
 
   .burgerMenu {
-    display: flex;
+    display: none; /* --- FLEX --- */
     position: absolute;
     flex-direction: column;
     justify-content: center;

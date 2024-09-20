@@ -4,6 +4,7 @@
 header {
   position: fixed;
   display: grid;
+  z-index: 2;
   top: 0;
   width: 100vw;
   background-color: rgba($color: white, $alpha: 0.7);

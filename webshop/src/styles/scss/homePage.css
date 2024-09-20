@@ -23,12 +23,63 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Heebo", sans-serif;
 }
 
 /* ----- THEME COLORS ---------- */
 /* ----- ACTION BUTTON COLORS ----- */
 main {
   background-color: rgb(100, 128, 0);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  margin: 11.2rem 0 0 0;
+  overflow-y: hidden;
+}
+
+/* ----- JUMBO SLIDER ----- */
+.keen-slider {
+  height: 72%;
+  box-sizing: content-box;
+  width: 100%;
+  border-radius: 0 0 75px 75px;
+  border-bottom: 3px solid rgb(100, 128, 0);
+  box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.keen-slider .welcome {
+  position: absolute;
+  display: flex;
+  border: 2px solid red;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  width: 40%;
+}
+.keen-slider .welcome h1 {
+  font-weight: 600;
+}
+.keen-slider .welcome p {
+  font-weight: 400;
+}
+.keen-slider .keen-slider__slide {
+  display: flex;
+}
+.keen-slider .keen-slider__slide img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 990px) {
+  main {
+    margin-top: 1.7rem;
+  }
+  .keen-slider {
+    margin-top: 5rem;
+    border-radius: 0 0 35px 35px;
+  }
+  .keen-slider img {
+    box-sizing: content-box;
+    height: 100%;
+  }
 }/*# sourceMappingURL=homePage.css.map */

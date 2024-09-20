@@ -1,12 +1,11 @@
 import "../styles/css/homePage.css";
-import JumboSlider from "../components/HeroSection";
+import JumboSlider from "../components/JumboSlider";
 
 function Home() {
   return (
     <main>
-      <section className="hero">
-        <JumboSlider />
-      </section>
+      <JumboSlider />
+      
 
       <section className="services"></section>
       <section className="deals"></section>

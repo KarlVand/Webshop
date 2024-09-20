@@ -1,8 +1,50 @@
 @import "_mixins";
 @import "_variables";
 
+
 main {
   background-color: $main-color;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  margin: 11.2rem 0 0 0;
+  overflow-y: hidden;
 }
+
+/* ----- JUMBO SLIDER ----- */
+
+.keen-slider {
+  height: 72%;
+  box-sizing: content-box;
+  width: 100%;
+  .welcome {
+    position: absolute;
+    display: flex;
+    border :2px solid red;
+    flex-direction: column;
+    justify-content: center;
+    
+    z-index: 1;
+    width : 40%;
+    h1{
+      font-weight: 600;
+    }
+    p {
+      font-weight: 400;
+    }
+
+  }
+  .keen-slider__slide{
+    display: flex;
+    img {
+      position: relative;
+      width: 100%;
+      object-fit: cover;  
+    }
+  }
+  
+  border-radius: 0 0 75px 75px;
+  border-bottom: 3px solid $main-color;
+  box-shadow: 0 5px 5px 3px rgba($color: #000000, $alpha: .2);
+}
+
+@import "_responsiveHomePage";
