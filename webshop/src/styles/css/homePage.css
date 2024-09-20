@@ -29,35 +29,45 @@
 /* ----- THEME COLORS ---------- */
 /* ----- ACTION BUTTON COLORS ----- */
 main {
-  background-color: rgb(100, 128, 0);
+  background-color: rgb(118, 148, 10);
   width: 100vw;
-  height: 100vh;
-  margin: 11.2rem 0 0 0;
+  margin: 0;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ----- JUMBO SLIDER ----- */
+/* -------------------- JUMBO SLIDER -------------------- */
 .keen-slider {
-  height: 72%;
+  height: 92vh;
   box-sizing: content-box;
   width: 100%;
-  border-radius: 0 0 75px 75px;
-  border-bottom: 3px solid rgb(100, 128, 0);
-  box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 50px 50px;
+  border-bottom: 3px solid rgb(118, 148, 10);
+  box-shadow: 0 7px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 .keen-slider .welcome {
   position: absolute;
   display: flex;
-  border: 2px solid red;
+  background-color: rgba(67, 84, 3, 0.7);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   z-index: 1;
-  width: 40%;
+  width: 100%;
+  height: 50%;
+  margin-top: 17.5rem;
+  gap: 1rem;
 }
 
 .keen-slider .welcome h1 {
   font-weight: 600;
+  font-size: 3rem;
 }
 
 .keen-slider .welcome p {
@@ -75,17 +85,44 @@ main {
   object-fit: cover;
 }
 
+/* -------------------- OUR SERVICES -------------------- */
+.Services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.Services h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2.4rem;
+  color: white;
+}
+
+.Services .container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  border-radius: 0 0 50px 50px;
+}
+
 @media (max-width: 990px) {
   main {
     margin-top: 1.7rem;
   }
   .keen-slider {
-    margin-top: 5rem;
+    margin-top: 0;
     border-radius: 0 0 35px 35px;
   }
   .keen-slider img {
     box-sizing: content-box;
     height: 100%;
+  }
+  .keen-slider .welcome {
+    margin-top: 10rem;
   }
 } 
 

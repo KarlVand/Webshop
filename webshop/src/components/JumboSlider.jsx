@@ -52,7 +52,7 @@ function JumboSlider() {
         ref={sliderRef}
         className="keen-slider">
         <div className="welcome">
-          <h1>Welcome to Freshshop</h1>
+          <h1>Welcome to <br></br> Freshshop</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto necessitatibus nihil! </p>
           <button>SHOP NOW</button>
         </div>

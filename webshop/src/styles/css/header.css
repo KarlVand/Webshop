@@ -42,7 +42,7 @@ header {
 /* ----- BANNER ---------- */
 .banner {
   position: relative;
-  background-color: rgb(100, 128, 0);
+  background-color: rgb(118, 148, 10);
   min-width: 100vw;
   max-width: 100vw;
   height: 2.1rem;
@@ -67,7 +67,7 @@ header {
   font-weight: 400;
   text-decoration: none;
   white-space: nowrap;
-  color: rgb(255, 255, 255);
+  color: rgb(208, 244, 180);
 }
 
 .banner li img {
@@ -93,14 +93,14 @@ header {
 select,
 input {
   padding: 0 0.5vw;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(208, 244, 180);
   color: rgb(13, 18, 9);
   border: none;
 }
 
 .submit {
   background-color: rgb(67, 84, 3);
-  color: rgb(255, 255, 255);
+  color: rgb(208, 244, 180);
   margin: 0 0.5vw;
   padding: 0.1vw 1vw;
 }
@@ -117,7 +117,8 @@ input {
 .navbar {
   position: relative;
   display: flex;
-  width: 100vw;
+  width: 77vw;
+  margin: 0 auto;
   height: 15vh;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +148,7 @@ input {
 }
 
 .logo h1 .fresh {
-  color: rgb(100, 128, 0);
+  color: rgb(118, 148, 10);
 }
 
 .logo h1 .shop {
@@ -160,7 +161,6 @@ input {
   display: flex;
   gap: 2rem;
   padding-top: 1.8rem;
-  margin-left: -6vw;
 }
 
 .links li {
@@ -174,11 +174,11 @@ input {
   white-space: nowrap;
   color: rgb(13, 18, 9);
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .links li a:hover {
-  color: rgb(100, 128, 0);
+  color: rgb(118, 148, 10);
 }
 
 .burgerBtn,
@@ -203,7 +203,7 @@ input {
   padding: 1vh 2vw;
   background-color: white;
   border-radius: 9px;
-  border: 2px solid rgb(100, 128, 0);
+  border: 2px solid rgb(118, 148, 10);
 }
 
 .buttons .btn img {
@@ -251,7 +251,7 @@ input {
     margin-left: -1.5rem;
   }
   .mobileHeader h1 .fresh {
-    color: rgb(100, 128, 0);
+    color: rgb(118, 148, 10);
   }
   .mobileHeader h1 .shop {
     color: rgb(13, 18, 9);
@@ -286,7 +286,7 @@ input {
     width: 100%;
   }
   .burgerMenu .divider {
-    background-color: rgb(100, 128, 0);
+    background-color: rgb(118, 148, 10);
     width: 70vw;
     height: 2px;
   }
@@ -309,8 +309,8 @@ input {
     cursor: pointer;
   }
   .burgerMenu li a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(100, 128, 0);
+    color: rgb(208, 244, 180);
+    background-color: rgb(118, 148, 10);
     padding: 0.8rem;
     background-size: 100vw;
   }

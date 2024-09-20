@@ -82,7 +82,8 @@ input {
 .navbar {
   position: relative;
   display: flex;
-  width: 100vw;
+  width: 77vw;
+  margin: 0 auto;
   height: 15vh;
   justify-content: space-between;
   align-items: center;
@@ -123,7 +124,7 @@ input {
   display: flex;
   gap: 2rem;
   padding-top: 1.8rem;
-  margin-left: -6vw;
+ 
   li {
     list-style: none;
     a {
@@ -133,7 +134,7 @@ input {
       white-space: nowrap;
       color: $dark-color;
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       &:hover {
         color: $main-color;
       }

@@ -5,34 +5,44 @@
 main {
   background-color: $main-color;
   width: 100vw;
-  height: 100vh;
-  margin: 11.2rem 0 0 0;
+    margin: 0;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ----- JUMBO SLIDER ----- */
+/* -------------------- JUMBO SLIDER -------------------- */
 
 .keen-slider {
-  height: 72%;
+  height: 92vh;
   box-sizing: content-box;
   width: 100%;
+  
   .welcome {
     position: absolute;
     display: flex;
-    border :2px solid red;
+    background-color: rgba($color: $main-darker-color, $alpha: .7);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    
     z-index: 1;
-    width : 40%;
+    width : 100%;
+    height: 50%;
+    margin-top: 17.5rem;
+    gap: 1rem;
     h1{
       font-weight: 600;
+      font-size: 3rem;
     }
     p {
       font-weight: 400;
     }
-
   }
+
   .keen-slider__slide{
     display: flex;
     img {
@@ -42,9 +52,33 @@ main {
     }
   }
   
-  border-radius: 0 0 75px 75px;
+  border-radius: 0 0 50px 50px;
   border-bottom: 3px solid $main-color;
-  box-shadow: 0 5px 5px 3px rgba($color: #000000, $alpha: .2);
+  box-shadow: 0 7px 5px 3px rgba($color: #000000, $alpha: .2);
+}
+
+/* -------------------- OUR SERVICES -------------------- */
+
+.Services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2.4rem;
+    color : white;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    border-radius: 0 0 50px 50px ;
+    
+  }
 }
 
 @import "_responsiveHomePage";
