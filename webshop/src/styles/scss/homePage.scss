@@ -1,0 +1,8 @@
+@import "_mixins";
+@import "_variables";
+
+main {
+  background-color: $main-color;
+  width: 100%;
+  height: 100vh;
+}
