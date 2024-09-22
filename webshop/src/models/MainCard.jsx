@@ -4,13 +4,15 @@ class MainCard {
         this.text = text;
     }
 
-    createMainCard () {
+    render() {
         
         return (
             <div className="mainCard">
-                <img src="" alt="" />
+                <img src={this.image} alt="services" />
                 <p>{this.text}</p>
             </div>
         )
     }
 }
+
+export default MainCard;

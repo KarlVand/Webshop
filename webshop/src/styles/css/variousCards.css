@@ -1,17 +1,47 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |         background-color: $main-color;
- *   |                           ^^^^^^^^^^^
- *   '
- *   src/styles/scss/variousCards.scss 9:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502          background-color: $main-color;\a   \2502                            ^^^^^^^^^^^\a   \2575 \a   src/styles/scss/variousCards.scss 9:27  root stylesheet";
+/* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
+/* ----- FONTS ---------- */
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-light.ttf");
+  font-weight: 400;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+/* ----- GENERAL LAYOUT ----- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+/* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  background-color: rgb(118, 148, 10);
+}
+
+.mainCard img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.mainCard p {
+  width: 100%;
+} 
+
+/*# sourceMappingURL=variousCards.css.map */

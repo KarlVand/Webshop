@@ -51,6 +51,8 @@ main {
   position: absolute;
   display: flex;
   background-color: rgba(67, 84, 3, 0.7);
+  border-top: 2px solid rgb(118, 148, 10);
+  border-bottom: 2px solid rgb(118, 148, 10);
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -61,7 +63,7 @@ main {
   z-index: 1;
   width: 100%;
   height: 50%;
-  margin-top: 17.5rem;
+  margin-top: 18rem;
   gap: 1rem;
 }
 
