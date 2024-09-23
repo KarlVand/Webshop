@@ -1,5 +1,6 @@
 class MainCard {
-    constructor (image, text) {
+    constructor (id, image, text) {
+        this.id = id;
         this.image = image;
         this.text = text;
     }
@@ -16,3 +17,10 @@ class MainCard {
 }
 
 export default MainCard;
+
+class BlogCard extends MainCard {
+    constructor (id, image, title, text) {
+        super(id,image, text);
+        this.title = title;
+    }
+}

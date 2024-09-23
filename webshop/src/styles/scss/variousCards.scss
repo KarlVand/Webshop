@@ -3,15 +3,25 @@
 
 .mainCard {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
-    width: 25vw;
+    align-items: center;
+    width: 20vw;
+    height: fit-content;
     background-color: $main-color;
+    margin: 5rem 0;
+    border-radius: 0 36px 36px;
     img {
         aspect-ratio: 1/1;
         width: 100%;
     }
     p {
         width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        
         
     }
 

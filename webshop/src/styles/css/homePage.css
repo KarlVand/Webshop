@@ -46,7 +46,6 @@ main {
   border-bottom: 3px solid rgb(118, 148, 10);
   box-shadow: 0 7px 5px 3px rgba(0, 0, 0, 0.2);
 }
-
 .keen-slider .welcome {
   position: absolute;
   display: flex;
@@ -66,24 +65,19 @@ main {
   margin-top: 18rem;
   gap: 1rem;
 }
-
 .keen-slider .welcome h1 {
   font-weight: 600;
   font-size: 3rem;
 }
-
 .keen-slider .welcome p {
   font-weight: 400;
 }
-
 .keen-slider .keen-slider__slide {
   display: flex;
 }
-
 .keen-slider .keen-slider__slide img {
   position: relative;
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -94,7 +88,6 @@ main {
   flex-direction: column;
   width: 100vw;
 }
-
 .Services h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -102,18 +95,72 @@ main {
   padding: 2.4rem;
   color: white;
 }
-
 .Services .container {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: white;
   display: flex;
+  justify-content: space-around;
   border-radius: 0 0 50px 50px;
+}
+
+/* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
+/* ----- FONTS ---------- */
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-light.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heebo", sans-serif;
+  src: local("../assets/fonts/Heebo-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+/* ----- GENERAL LAYOUT ----- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+/* ----- THEME COLORS ---------- */
+/* ----- ACTION BUTTON COLORS ----- */
+.mainCard {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  height: fit-content;
+  background-color: rgb(118, 148, 10);
+  margin: 5rem 0;
+  border-radius: 0 36px 36px;
+}
+.mainCard img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.mainCard p {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
 @media (max-width: 990px) {
   main {
     margin-top: 1.7rem;
+    overflow-x: hidden;
   }
   .keen-slider {
     margin-top: 0;
@@ -126,6 +173,14 @@ main {
   .keen-slider .welcome {
     margin-top: 10rem;
   }
-} 
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainCard {
+    min-width: 90vw;
+    margin: 0 1rem;
+  }
+}
 
 /*# sourceMappingURL=homePage.css.map */

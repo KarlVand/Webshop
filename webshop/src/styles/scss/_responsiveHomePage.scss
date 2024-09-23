@@ -1,6 +1,9 @@
+@import "variousCards";
+
 @media (max-width:990px) {
     main {
         margin-top: 1.7rem;
+        overflow-x: hidden;
     }
     .keen-slider {
         margin-top: 0;
@@ -12,5 +15,14 @@
         .welcome{
             margin-top: 10rem;
         }
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;    }
+    .mainCard {
+        
+        min-width: 90vw;
+        margin: 0 1rem;
+        
     }
 }
