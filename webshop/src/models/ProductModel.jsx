@@ -1,5 +1,6 @@
 class ProductCard {
-  constructor(name, price, image, onSale = false) {
+  constructor(id, name, price, image, onSale = false) {
+    this.id = id;
     this.name = name;
     this.price = price;
     this.image = image;
@@ -8,11 +9,18 @@ class ProductCard {
 
   createProductCard() {
     return (
-      <div className="product-card">
-        <h2>${this.name}</h2>
-        <p>${this.price}€</p>
-        <p>Items left in stock: ${this.quantity}</p>
-        {this.onSale && <p className="salesBadge">Promo</p>}$
+      <div className="productCard">
+        <img
+          src={this.image}
+          alt={this.name}
+        />
+        <h2>{this.name}</h2>
+        <p>{this.price}€</p>
+        {this.onSale ? (
+          <p className="saleBadge">Deal</p>
+        ) : (
+          <p className="newBadge">New</p>
+        )}
         {this.addBuyButtons}
       </div>
     );
@@ -34,3 +42,5 @@ class ProductDetails extends ProductCard {
     this.description = description;
   }
 }
+
+export { ProductCard, ProductDetails };

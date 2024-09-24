@@ -161,7 +161,7 @@ input {
 .logo img {
   position: absolute;
   z-index: -1;
-  top: -50px;
+  top: -15px;
   left: 2vw;
 }
 .logo h1 {
@@ -384,31 +384,73 @@ main {
      object-fit: cover;
 }
 
-/* -------------------- OUR SERVICES -------------------- */
-.Services {
+/* ----- COMMON FEATURES ( SERVICES & BLOG )----- */
+.Services,
+.blog,
+.highlights {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
-.Services .container {
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2.4rem;
+  color: white;
+}
+
+/* -------------------- OUR SERVICES -------------------- */
+.container {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   display: flex;
   justify-content: space-around;
+}
+
+/* -------------------- PRODUCT HIGHLIGHT -------------------- */
+.prodSection {
+  background-color: white;
+}
+
+h3 {
+  display: flex;
+  font-size: 2rem;
+  padding: 2rem 0 0 0;
+  color: rgb(118, 148, 10);
+  justify-content: center;
+}
+
+.prodTitle {
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(67, 84, 3);
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.prodDisplay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
   border-radius: 0 0 50px 50px;
 }
 
-/* -------------------- BLOG POST -------------------- */
-.blog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+.buttons {
+  justify-content: center;
 }
-.blog .blogcontainer {
+
+/* -------------------- BLOG POST -------------------- */
+.blogcontainer {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -417,26 +459,17 @@ main {
   justify-content: space-around;
   border-radius: 0 0 50px 50px;
 }
-.blog .blogcontainer h3 {
+.blogcontainer h3 {
   font-weight: 800;
   color: rgb(208, 244, 180);
   padding-top: 1rem;
   text-transform: uppercase;
 }
-.blog .blogcontainer p {
+.blogcontainer p {
   position: relative;
   font-weight: 400;
-  width: 80%;
-  padding: 1.5rem;
-}
-
-/* ----- COMMON FEATURES ----- */
-h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 2.4rem;
-  color: white;
+  width: 60%;
+  padding: 2rem;
 }
 
 /* ----- THEME COLORS ---------- */
@@ -469,28 +502,50 @@ h1 {
 
 /* ----- THEME COLORS ---------- */
 /* ----- ACTION BUTTON COLORS ----- */
-.mainCard {
+.mainCard,
+.productCard {
   display: flex;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(118, 148, 10);
   margin: 5rem 0;
   border-radius: 0 36px 36px;
 }
-.mainCard img {
+.mainCard img,
+.productCard img {
   aspect-ratio: 1/1;
   width: 100%;
 }
-.mainCard p {
+.mainCard p,
+.productCard p {
   width: 100%;
   padding: 1rem 0;
   text-align: center;
   color: white;
   font-weight: 600;
+}
+
+.mainCard {
+  width: 20vw;
+}
+
+.productCard {
+  width: 15vw;
+}
+.productCard h1 {
+  color: rgb(208, 244, 180);
+}
+.productCard .saleBadge,
+.productCard .newBadge {
+  position: relative;
+  background-color: red;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1rem;
+  top: 0;
 }
 
 @media (max-width: 990px) {

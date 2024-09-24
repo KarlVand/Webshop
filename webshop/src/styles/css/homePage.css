@@ -65,7 +65,6 @@ header {
   top: 0;
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
@@ -80,18 +79,15 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .banner ul {
   display: flex;
   gap: 1.5vw;
   margin-left: -10rem;
 }
-
 .banner li {
   display: flex;
   list-style: none;
 }
-
 .banner li a {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
@@ -99,7 +95,6 @@ header {
   white-space: nowrap;
   color: rgb(208, 244, 180);
 }
-
 .banner li img {
   max-width: 20px;
 }
@@ -138,7 +133,6 @@ input {
 .promo {
   max-width: 40vw;
 }
-
 .promo p {
   white-space: no-wrap;
 }
@@ -163,24 +157,20 @@ input {
   display: flex;
   margin-left: 1rem;
 }
-
 .logo img {
   position: absolute;
   z-index: -1;
-  top: -50px;
+  top: -15px;
   left: 2vw;
 }
-
 .logo h1 {
   font-family: "Heebo", sans-serif;
   font-weight: 800;
   font-size: 3rem;
 }
-
 .logo h1 .fresh {
   color: rgb(118, 148, 10);
 }
-
 .logo h1 .shop {
   color: rgb(13, 18, 9);
 }
@@ -192,11 +182,9 @@ input {
   gap: 2rem;
   padding-top: 1.8rem;
 }
-
 .links li {
   list-style: none;
 }
-
 .links li a {
   font-family: "Heebo", sans-serif;
   font-weight: 600;
@@ -206,7 +194,6 @@ input {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
 .links li a:hover {
   color: rgb(118, 148, 10);
 }
@@ -224,9 +211,9 @@ input {
   gap: 1vw;
   margin-right: 1rem;
 }
-
 .buttons .btn {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
   margin-top: 2vh;
@@ -235,11 +222,9 @@ input {
   border-radius: 9px;
   border: 2px solid rgb(118, 148, 10);
 }
-
 .buttons .btn img {
   max-width: 1.3vw;
 }
-
 .buttons .btn a {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
@@ -253,7 +238,6 @@ input {
   /* ----- DISPLAY NONE ----- */
   header {
     background: none;
-    -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
   .banner,
@@ -304,7 +288,6 @@ input {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     width: 100%;
     height: 80vh;
@@ -363,7 +346,6 @@ main {
   border-bottom: 3px solid rgb(118, 148, 10);
   box-shadow: 0 7px 5px 3px rgba(0, 0, 0, 0.2);
 }
-
 .keen-slider .welcome {
   position: absolute;
   display: flex;
@@ -383,84 +365,106 @@ main {
   margin-top: 18rem;
   gap: 1rem;
 }
-
 .keen-slider .welcome h1 {
   font-weight: 600;
   font-size: 3rem;
 }
-
 .keen-slider .welcome p {
   font-weight: 400;
 }
-
 .keen-slider .keen-slider__slide {
   display: flex;
 }
-
 .keen-slider .keen-slider__slide img {
   position: relative;
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
-/* -------------------- OUR SERVICES -------------------- */
-.Services {
+/* ----- COMMON FEATURES ( SERVICES & BLOG )----- */
+.Services,
+.blog,
+.highlights {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
 
-.Services .container {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 0 0 50px 50px;
-}
-
-/* -------------------- BLOG POST -------------------- */
-.blog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-}
-
-.blog .blogcontainer {
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: rgb(208, 244, 180);
-  display: flex;
-  justify-content: space-around;
-  border-radius: 0 0 50px 50px;
-}
-
-.blog .blogcontainer h3 {
-  font-weight: 800;
-  color: rgb(208, 244, 180);
-  padding-top: 1rem;
-  text-transform: uppercase;
-}
-
-.blog .blogcontainer p {
-  position: relative;
-  font-weight: 400;
-  width: 80%;
-  padding: 1.5rem;
-}
-
-/* ----- COMMON FEATURES ----- */
 h1 {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
   padding: 2.4rem;
   color: white;
+}
+
+/* -------------------- OUR SERVICES -------------------- */
+.container {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* -------------------- PRODUCT HIGHLIGHT -------------------- */
+.prodSection {
+  background-color: white;
+}
+
+h3 {
+  display: flex;
+  font-size: 2rem;
+  padding: 2rem 0 0 0;
+  color: rgb(118, 148, 10);
+  justify-content: center;
+}
+
+.prodTitle {
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(67, 84, 3);
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.prodDisplay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 50px 50px;
+}
+
+.buttons {
+  justify-content: center;
+}
+
+/* -------------------- BLOG POST -------------------- */
+.blogcontainer {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(208, 244, 180);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 50px 50px;
+}
+.blogcontainer h3 {
+  font-weight: 800;
+  color: rgb(208, 244, 180);
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.blogcontainer p {
+  position: relative;
+  font-weight: 400;
+  width: 60%;
+  padding: 2rem;
 }
 
 /* ----- THEME COLORS ---------- */
@@ -493,30 +497,48 @@ h1 {
 
 /* ----- THEME COLORS ---------- */
 /* ----- ACTION BUTTON COLORS ----- */
-.mainCard {
+.mainCard,
+.productCard {
   display: flex;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(118, 148, 10);
   margin: 5rem 0;
   border-radius: 0 36px 36px;
 }
-
-.mainCard img {
+.mainCard img,
+.productCard img {
   aspect-ratio: 1/1;
   width: 100%;
 }
-
-.mainCard p {
+.mainCard p,
+.productCard p {
   width: 100%;
   padding: 1rem 0;
   text-align: center;
   color: white;
   font-weight: 600;
+}
+
+.mainCard {
+  width: 20vw;
+}
+
+.productCard {
+  width: 15vw;
+}
+.productCard h1 {
+  color: rgb(208, 244, 180);
+}
+.productCard .saleBadge,
+.productCard .newBadge {
+  position: relative;
+  background-color: red;
+  width: fit-content;
+  padding: 0 1rem;
+  top: 0;
 }
 
 @media (max-width: 990px) {
@@ -544,6 +566,6 @@ h1 {
     min-width: 90vw;
     margin: 0 1rem;
   }
-} 
+}
 
 /*# sourceMappingURL=homePage.css.map */

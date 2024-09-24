@@ -8,7 +8,7 @@ class MainCard {
 
   render() {
     return (
-      <div className="mainCard animate__bounce">
+      <div className="animate__bounce mainCard">
         <img
           src={this.image}
           alt="services"

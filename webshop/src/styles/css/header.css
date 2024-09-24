@@ -137,7 +137,7 @@ input {
 .logo img {
   position: absolute;
   z-index: -1;
-  top: -50px;
+  top: -15px;
   left: 2vw;
 }
 
@@ -197,6 +197,7 @@ input {
 
 .buttons .btn {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
   margin-top: 2vh;
