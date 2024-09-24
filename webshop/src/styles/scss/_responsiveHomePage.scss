@@ -1,28 +1,28 @@
 @import "variousCards";
 
-@media (max-width:990px) {
-    main {
-        margin-top: 1.7rem;
-        overflow-x: hidden;
+@media (max-width: 990px) {
+  main {
+    margin-top: 1.7rem;
+    overflow-x: hidden;
+  }
+  .keen-slider {
+    margin-top: 0;
+    border-radius: 0 0 35px 35px;
+    img {
+      box-sizing: content-box;
+      height: 100%;
     }
-    .keen-slider {
-        margin-top: 0;
-        border-radius: 0 0 35px 35px;
-        img {
-            box-sizing: content-box;
-            height: 100%;
-        }
-        .welcome{
-            margin-top: 10rem;
-        }
+    .welcome {
+      margin-top: 10rem;
     }
-    .container {
-        flex-direction: column;
-        align-items: center;    }
-    .mainCard {
-        
-        min-width: 90vw;
-        margin: 0 1rem;
-        
-    }
+  }
+  .container,
+  .blogcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainCard {
+    min-width: 90vw;
+    margin: 0 1rem;
+  }
 }

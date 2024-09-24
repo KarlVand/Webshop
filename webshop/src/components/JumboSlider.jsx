@@ -1,4 +1,5 @@
 import "../styles/css/homePage.css";
+
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
@@ -52,18 +53,36 @@ function JumboSlider() {
         ref={sliderRef}
         className="keen-slider">
         <div className="welcome">
-          <h1>Welcome to <br></br> Freshshop</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto necessitatibus nihil! </p>
-          <button>SHOP NOW</button>
+          <h1>
+            Welcome to <br></br> Freshshop
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+            necessitatibus nihil!{" "}
+          </p>
+          <button className="btn">SHOP NOW</button>
         </div>
-        <div className="keen-slider__slide number-slide1"><img src={Image1} alt="strawberry" /></div>
-        <div className="keen-slider__slide number-slide2"><img src={Image2} alt="tomatoes" /></div>
-        <div className="keen-slider__slide number-slide3"><img src={Image3} alt="beans" /></div>
-        
+        <div className="keen-slider__slide number-slide1">
+          <img
+            src={Image1}
+            alt="strawberry"
+          />
+        </div>
+        <div className="keen-slider__slide number-slide2">
+          <img
+            src={Image2}
+            alt="tomatoes"
+          />
+        </div>
+        <div className="keen-slider__slide number-slide3">
+          <img
+            src={Image3}
+            alt="beans"
+          />
+        </div>
       </div>
     </>
   );
 }
-
 
 export default JumboSlider;

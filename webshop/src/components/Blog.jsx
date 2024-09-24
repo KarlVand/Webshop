@@ -30,7 +30,7 @@ function Blog() {
   ];
   return (
     <section className="blog">
-      <h1>latest blog</h1>
+      <h1>Latest Blog</h1>
       <div className="blogcontainer">
         {blogPosts.map(blogPost => (
           <React.Fragment key={blogPost.id}>{blogPost.render()}</React.Fragment>

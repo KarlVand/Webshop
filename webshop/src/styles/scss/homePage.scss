@@ -1,11 +1,11 @@
 @import "_mixins";
 @import "_variables";
-
+@import "header";
 
 main {
   background-color: $main-color;
   width: 100vw;
-    margin: 0;
+  margin: 0;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,11 @@ main {
   height: 92vh;
   box-sizing: content-box;
   width: 100%;
-  
+
   .welcome {
     position: absolute;
     display: flex;
-    background-color: rgba($color: $main-darker-color, $alpha: .7);
+    background-color: rgba($color: $main-darker-color, $alpha: 0.7);
     border-top: 2px solid $main-color;
     border-bottom: 2px solid $main-color;
     color: white;
@@ -32,11 +32,11 @@ main {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    width : 100%;
+    width: 100%;
     height: 50%;
     margin-top: 18rem;
     gap: 1rem;
-    h1{
+    h1 {
       font-weight: 600;
       font-size: 3rem;
     }
@@ -45,18 +45,18 @@ main {
     }
   }
 
-  .keen-slider__slide{
+  .keen-slider__slide {
     display: flex;
     img {
       position: relative;
       width: 100%;
-      object-fit: cover;  
+      object-fit: cover;
     }
   }
-  
+
   border-radius: 0 0 50px 50px;
   border-bottom: 3px solid $main-color;
-  box-shadow: 0 7px 5px 3px rgba($color: #000000, $alpha: .2);
+  box-shadow: 0 7px 5px 3px rgba($color: #000000, $alpha: 0.2);
 }
 
 /* -------------------- OUR SERVICES -------------------- */
@@ -66,30 +66,53 @@ main {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 2.4rem;
-    color : white;
-  }
+
   .container {
     width: 100%;
     height: fit-content;
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    border-radius: 0 0 50px 50px ;
-    
+    border-radius: 0 0 50px 50px;
   }
 }
-
 
 /* -------------------- BLOG POST -------------------- */
 
 .blog {
   position: relative;
   display: flex;
-  background-color: red;
+  flex-direction: column;
+  width: 100vw;
+  .blogcontainer {
+    width: 100%;
+    height: fit-content;
+    background-color: $light-color;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 50px 50px;
+
+    h3 {
+      font-weight: 800;
+      color: $light-color;
+      padding-top: 1rem;
+      text-transform: uppercase;
+    }
+    p {
+      position: relative;
+      font-weight: 400;
+      width: 80%;
+      padding: 1.5rem;
+    }
+  }
+}
+
+/* ----- COMMON FEATURES ----- */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2.4rem;
+  color: white;
 }
 @import "_responsiveHomePage";

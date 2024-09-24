@@ -1,3 +1,4 @@
+import "animate.css";
 class MainCard {
   constructor(id, image, title) {
     this.id = id;
@@ -7,7 +8,7 @@ class MainCard {
 
   render() {
     return (
-      <div className="mainCard">
+      <div className="mainCard animate__bounce">
         <img
           src={this.image}
           alt="services"
@@ -31,7 +32,7 @@ class BlogCard extends MainCard {
           src={this.image}
           alt="blog post"
         />
-        <p>{this.title}</p>
+        <h3>{this.title}</h3>
         <p>{this.text}</p>
       </div>
     );

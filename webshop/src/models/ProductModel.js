@@ -1,8 +1,8 @@
 class ProductCard {
-  constructor(name, price, quantity, onSale = false) {
+  constructor(name, price, image, onSale = false) {
     this.name = name;
     this.price = price;
-    this.quantity = quantity;
+    this.image = image;
     this.onSale = onSale;
   }
 
