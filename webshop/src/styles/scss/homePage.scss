@@ -119,6 +119,12 @@ h3 {
 .buttons {
   justify-content: center;
 }
+.line {
+  height: 0.2rem;
+  width: 100vw;
+  background-color: $main-color;
+  margin: 3rem 0 0 0;
+}
 /* -------------------- BLOG POST -------------------- */
 
 .blogcontainer {

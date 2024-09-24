@@ -17,12 +17,22 @@
     }
   }
   .container,
-  .blogcontainer {
+  .blogcontainer,
+  .prodDisplay {
     flex-direction: column;
     align-items: center;
   }
-  .mainCard {
+  .mainCard,
+  .productCard {
     min-width: 90vw;
     margin: 0 1rem;
+  }
+  .prodTitle {
+    white-space: inherit;
+  }
+  .prodSection {
+    .buttons {
+      width: 40vw;
+    }
   }
 }

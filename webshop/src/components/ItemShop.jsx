@@ -31,7 +31,7 @@ function Products() {
           <button className="btn featured">Top Featured</button>
           <button className="btn bestSeller">Best Seller</button>
         </div>
-
+        <div className="line"></div>
         <div className="prodDisplay">
           {products.map(product => (
             <React.Fragment key={product.id}>
