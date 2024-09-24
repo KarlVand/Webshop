@@ -84,4 +84,12 @@ main {
   }
 }
 
+
+/* -------------------- BLOG POST -------------------- */
+
+.blog {
+  position: relative;
+  display: flex;
+  background-color: red;
+}
 @import "_responsiveHomePage";

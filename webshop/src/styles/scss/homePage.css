@@ -106,6 +106,13 @@ main {
   border-radius: 0 0 50px 50px;
 }
 
+/* -------------------- BLOG POST -------------------- */
+.blog {
+  position: relative;
+  display: flex;
+  background-color: red;
+}
+
 /* ----- THEME COLORS ---------- */
 /* ----- ACTION BUTTON COLORS ----- */
 /* ----- FONTS ---------- */
@@ -146,6 +153,7 @@ main {
   height: fit-content;
   background-color: rgb(118, 148, 10);
   margin: 5rem 0;
+  border-radius: 0 36px 36px;
 }
 .mainCard img {
   aspect-ratio: 1/1;

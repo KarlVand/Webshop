@@ -1,7 +1,7 @@
 {
   "name": "webshop",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,10 +26,14 @@
     "globals": "^15.9.0",
     "vite": "^5.4.1"
   },
-  {
+  
   "compilerOptions": {
     "baseUrl": "src"
   },
+  {
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  },
   "include": ["src"]
+  
 }
-}
+

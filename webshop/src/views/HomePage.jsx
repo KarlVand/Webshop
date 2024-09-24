@@ -2,16 +2,16 @@ import "../styles/css/homePage.css";
 import JumboSlider from "../components/JumboSlider";
 import OurServices from "../components/OurServices";
 
+import Blog from "../components/Blog";
+
 function Home() {
   return (
     <main>
       <JumboSlider />
       <OurServices />
 
+      <Blog />
       
-      <section className="deals"></section>
-      <section className="fruit"></section>
-      <section className="blog"></section>
     </main>
   );
 }

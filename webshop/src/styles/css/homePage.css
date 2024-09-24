@@ -46,6 +46,7 @@ main {
   border-bottom: 3px solid rgb(118, 148, 10);
   box-shadow: 0 7px 5px 3px rgba(0, 0, 0, 0.2);
 }
+
 .keen-slider .welcome {
   position: absolute;
   display: flex;
@@ -65,19 +66,24 @@ main {
   margin-top: 18rem;
   gap: 1rem;
 }
+
 .keen-slider .welcome h1 {
   font-weight: 600;
   font-size: 3rem;
 }
+
 .keen-slider .welcome p {
   font-weight: 400;
 }
+
 .keen-slider .keen-slider__slide {
   display: flex;
 }
+
 .keen-slider .keen-slider__slide img {
   position: relative;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -88,6 +94,7 @@ main {
   flex-direction: column;
   width: 100vw;
 }
+
 .Services h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -95,13 +102,22 @@ main {
   padding: 2.4rem;
   color: white;
 }
+
 .Services .container {
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   display: flex;
   justify-content: space-around;
   border-radius: 0 0 50px 50px;
+}
+
+/* -------------------- BLOG POST -------------------- */
+.blog {
+  position: relative;
+  display: flex;
+  background-color: red;
 }
 
 /* ----- THEME COLORS ---------- */
@@ -140,15 +156,18 @@ main {
   flex-direction: column;
   align-items: center;
   width: 20vw;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(118, 148, 10);
   margin: 5rem 0;
   border-radius: 0 36px 36px;
 }
+
 .mainCard img {
   aspect-ratio: 1/1;
   width: 100%;
 }
+
 .mainCard p {
   width: 100%;
   padding: 1rem 0;
@@ -181,6 +200,6 @@ main {
     min-width: 90vw;
     margin: 0 1rem;
   }
-}
+} 
 
 /*# sourceMappingURL=homePage.css.map */
