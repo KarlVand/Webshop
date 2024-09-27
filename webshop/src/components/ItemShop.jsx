@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Parallax } from "react-scroll-parallax";
 import "../styles/css/homePage.css";
 
-import { ProductCard } from "../models/ProductModel";
+import { ProductCard, ParallaxProvider } from "../models/ProductModel";
 
 import Product1 from "../assets/images/img-pro-01.jpg";
 import Product2 from "../assets/images/img-pro-02.jpg";
@@ -18,18 +18,34 @@ function Products() {
   ];
 
   return (
-    <section className="highlights">
-      <h1>Product Highlights</h1>
-      <div className="prodSection">
-        <h3>Fruits & Vegetables</h3>
-        <p className="prodTitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-          magni ratione.
-        </p>
-        <div className="buttons">
-          <button className="btn all">All</button>
-          <button className="btn featured">Top Featured</button>
-          <button className="btn bestSeller">Best Seller</button>
+    <ParallaxProvider>
+      <section className="highlights">
+        <Parallax
+          translateY={["150%", "-50%", "-150%"]}
+          opacity={[0, 1, 1]}
+          scale={[0.5, 1, 1]}
+          easing="easeInQuad"
+          rootMargin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+          <h1>Product Highlights</h1>
+        </Parallax>
+
+        <div className="prodSection">
+          <h3>Fruits & Vegetables</h3>
+          <Parallax
+            translateY={["-50%", "50%", "-50%"]}
+            opacity={[0.5, 1, 0.5]}
+            easing="easeOut">
+            <p className="prodTitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aspernatur magni ratione.
+            </p>
+          </Parallax>
+
+          <div className="buttons">
+            <button className="btn all">All</button>
+            <button className="btn featured">Top Featured</button>
+            <button className="btn bestSeller">Best Seller</button>
+          </div>
         </div>
         <div className="line"></div>
         <div className="prodDisplay">
@@ -39,8 +55,8 @@ function Products() {
             </React.Fragment>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </ParallaxProvider>
   );
 }
 

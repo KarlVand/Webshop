@@ -62,6 +62,7 @@ function JumboSlider() {
           </p>
           <button className="btn">SHOP NOW</button>
         </div>
+
         <div className="keen-slider__slide number-slide1">
           <img
             src={Image1}

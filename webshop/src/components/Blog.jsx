@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../styles/css/homePage.css";
 import "../styles/css/variousCards.css";
 import { BlogCard } from "../models/MainCard.jsx";

@@ -165,6 +165,7 @@ input {
     background-color: rgba($color: white, $alpha: 1);
     border-radius: 9px;
     border: 2px solid $main-color;
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     img {
       max-width: 1.3vw;
     }
@@ -174,6 +175,16 @@ input {
       text-decoration: none;
       color: $dark-color;
       padding-left: 0.1vw;
+    }
+  }
+  .btn:hover {
+    background-color: $main-color;
+    border: 2px solid white;
+    a {
+      color: white;
+    }
+    img {
+      fill: white;
     }
   }
 }

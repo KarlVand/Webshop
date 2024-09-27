@@ -192,6 +192,7 @@ input {
   background-color: white;
   border-radius: 9px;
   border: 2px solid rgb(118, 148, 10);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .buttons .btn img {
   max-width: 1.3vw;
@@ -202,6 +203,16 @@ input {
   text-decoration: none;
   color: rgb(13, 18, 9);
   padding-left: 0.1vw;
+}
+.buttons .btn:hover {
+  background-color: rgb(118, 148, 10);
+  border: 2px solid white;
+}
+.buttons .btn:hover a {
+  color: white;
+}
+.buttons .btn:hover img {
+  fill: white;
 }
 
 /* ----- MEDIA QUERIES ----- */

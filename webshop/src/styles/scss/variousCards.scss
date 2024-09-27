@@ -30,8 +30,10 @@
 
 .productCard {
   width: 15vw;
-  h1 {
+  h2 {
     color: $light-color;
+    text-transform: uppercase;
+    padding: 1rem;
   }
   .saleBadge,
   .newBadge {

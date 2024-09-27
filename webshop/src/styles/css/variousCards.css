@@ -64,8 +64,10 @@
   width: 15vw;
 }
 
-.productCard h1 {
+.productCard h2 {
   color: rgb(208, 244, 180);
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
 .productCard .saleBadge,
