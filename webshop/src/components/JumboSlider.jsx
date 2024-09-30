@@ -2,6 +2,7 @@ import "../styles/css/homePage.css";
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import Parallax from "react-rellax";
 
 /* --------------- IMAGES --------------- */
 
@@ -53,14 +54,19 @@ function JumboSlider() {
         ref={sliderRef}
         className="keen-slider">
         <div className="welcome">
-          <h1>
-            Welcome to <br></br> Freshshop
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-            necessitatibus nihil!{" "}
-          </p>
-          <button className="btn">SHOP NOW</button>
+          <Parallax speed={6}>
+            <h1>
+              Welcome to <br></br>Freshshop
+            </h1>
+          </Parallax>
+          <Parallax speed={7}>
+            {" "}
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+              necessitatibus nihil!{" "}
+            </p>
+            <button className="btn">SHOP NOW</button>
+          </Parallax>
         </div>
         <div className="keen-slider__slide number-slide1">
           <img
